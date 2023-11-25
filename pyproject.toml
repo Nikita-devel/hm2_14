@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "hm2_14"
+version = "0.1.2"
+description = ""
+authors = ["Nikita-devel <80445277+Nikita-devel@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "hm2_14"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.101.1"
+uvicorn = "^0.23.2"
+pydantic = {extras = ["email"], version = "^2.1.1"}
+psycopg2-binary = "^2.9.7"
+sqlalchemy = "^2.0.20"
+pydantic-extra-types = "^2.0.0"
+alembic = "^1.11.3"
+phonenumbers = "^8.13.18"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+libgravatar = "^1.0.4"
+passlib = "^1.7.4"
+python-multipart = "^0.0.6"
+bcrypt = "^4.0.1"
+fastapi-mail = "^1.4.1"
+python-dotenv = "^1.0.0"
+pydantic-settings = "^2.0.3"
+redis = "4.6.0"
+fastapi-limiter = "^0.1.5"
+cloudinary = "^1.34.0"
+sphynx = "^0.0.3"
+pytest = "^7.4.2"
+httpx = "^0.25.0"
+faker = "^19.6.2"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.2.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
