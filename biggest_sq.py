@@ -6,7 +6,7 @@ import sys
 
 def generate_map(rows, cols, density, empty='.', obstacle='o', full='X'):
     """
-    Generate BSQ map lines:
+    Generate map lines:
       - First line: "<rows><empty><obstacle><full>"
       - Next lines: grid rows with 'obstacle' at 'density' probability, else 'empty'
     """
@@ -32,7 +32,7 @@ def display(grid, empty, obstacle, full, best_i, best_j, best_size):
 
 def solve_animated(header, grid, empty, obstacle, full, delay=0.2):
     """
-    Solve BSQ with DP, animating each time a larger square is found.
+    Solve with DP, animating each time a larger square is found.
     """
     rows = int(header[:-3])
     cols = len(grid[0])
